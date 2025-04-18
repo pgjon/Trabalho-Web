@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Formulário para preenchimento de dados de usuário sobre o site">
+    <meta name="author" content="Jones">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+
+    <style>
+        .form-container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contato {
+            margin: 0 auto;
+            width: 90%;
+            max-width: 450px;
+            margin-bottom: 15px;
+        }
+        
+        h3.centered {
+            text-align: center;
+        }
+        
+        .input-group {
+            max-width: 250px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 15px;
+        }
+        
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            text-align: left;
+            font-weight: bold;
+        }
+        
+        .input-field {
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .checkbox-group {
+            margin-top: 15px;
+            max-width: 350px;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .checkbox-group input {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <a href="/Trabalho/pages/index.html">Início</a>
+
+        <!--Início do formulário-->
+        <form action="dados.php">
+
+            <!-- Seleção do tipo radio para saber o gosto sobre o site -->
+            <h3>O que você achou do site??</h3>
+            <input type="radio" name="opiniao" checked> Muito bom
+            <input type="radio" name="opiniao"> Bom
+            <input type="radio" name="opiniao"> Regular
+            <input type="radio" name="opiniao"> Um Lixo
+
+            <!-- Seleção única para saber qual melhor seção junto a uma caixa de texto caso não tenha a opção -->
+            <h3>Qual página você mais gostou?</h3>
+            <select name="secao">
+                <option value="incio" selected>Página Inicial</option>
+                <option value="informacoes">Página de Informações</option>
+                <option value="playstation">PlayStation</option>
+                <option value="superNintendo">Super Nintendo</option>
+                <option value="formulario">Página de Formulário</option>
+            </select>
+
+            <!-- Caixa de texto para comentário / sugestões -->
+            <h3>Digite seus comentários no campo abaixo:</h3>
+            <textarea name="comentarios" id="comentarios" rows="5" cols="50" required
+                placeholder="Escreva seus comentários aqui..."></textarea>
+
+            <!-- Inputs para nome, email e fone -->
+            <h3 class="centered">Diga-nos como entrar em contato com você:</h3>
+            
+            <div class="contato">
+                <div class="input-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Nome" class="input-field">
+                </div>
+                
+                <div class="input-group">
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome" class="input-field">
+                </div>
+                
+                <div class="input-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required 
+                           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" 
+                           placeholder="exemple@exemple.com" class="input-field">
+                </div>
+                
+                <div class="input-group">
+                    <label for="contato">Contato:</label>
+                    <input type="tel" id="contato" name="contato" placeholder="(XX) XXXXX-XXXX" class="input-field">
+                </div>
+
+                <!-- Checkbox para concordar com os termos -->
+                <div class="checkbox-group">
+                    <input type="checkbox" id="termos" name="termos">
+                    <label for="termos">Li e concordo com os termos</label>
+                </div>
+
+                <!-- Checkbox para receber novidades via email -->
+                <div class="checkbox-group">
+                    <input type="checkbox" id="novidades" name="novidades">
+                    <label for="novidades">Quero receber as novidades do site por e-mail</label>
+                </div>
+
+                <!-- Botões para enviar os dados ou resetar o preenchimento -->
+                <div class="buttons">
+                    <input type="submit" value="Enviar Dados">
+                    <input type="reset" value="Limpar Formulário">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
