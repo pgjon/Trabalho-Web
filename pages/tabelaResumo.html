@@ -1,204 +1,362 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Página com resumo de informações sobre jogos favoritos.">
+    <meta name="author" content="Jones">
+    <meta name="keywords" content="Jogos, favoritos, consoles, PlayStation, Need for Speed Underground 2, Crash Bandicoot,
+        Mortal Kombat Trilogy, Resident Evil 4">
+    <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resumo de Informações</title>
+    <title>Resumo Informações</title>
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
+
 <body>
-    <a href="/Trabalho/pages/index.html">Início</a>
-    <h1>Resumo de Informações</h1>
-    <h3>Esta página contém um resumo das informações relevantes.</h3>
+    <!-- Menu de navegação superior -->
+    <header>
+        <h1>Resumo de Informações</h1>
+        <nav>
+            <a href="/pages/index.html">Início</a>
+            <a href="/pages/tabelaResumo.html">Tabela de Informações</a>
+            <a href="/pages/playstation.html">PlayStation</a>
+            <a href="/pages/supernintendo.html">Supernintendo</a>
+            <a href="/pages/formulario.html">Entre em contato</a>
+        </nav>
+    </header>
 
-    <ol>
-        <font face="Arial" size="3">
-            <li><a href="/Trabalho/pages/supernintendo.html">Super Nintendo</a></li>
-            <li><a href="/Trabalho/pages/playstation.html">Playstation</a></li>
-            <li><a href="/Trabalho/pages/formulario.html">Formulário de Contato</a></li>
-        </font>
-    </ol>
+    <!-- Conteúdo principal do site -->
+    <main>
+        <h3>Esta página contém um resumo das informações relevantes.</h3>
 
-    <table align="center" title="Informações" border="1" width="80%" cellpadding="1" cellspacing="1">    
-        <tr>
-            <td colspan="5" align="center" style="font-size: 18px;">
-                <strong>Lista de Jogos Favoritos</strong>
-            </td>
-        </tr>
+        <!-- Tabela Resumo do Site -->
+        <table align="center" title="Informações" border="1" width="80%" cellpadding="1" cellspacing="1">
+            <tr>
+                <td colspan="5" align="center" style="font-size: 18px;">
+                    <strong>Lista de Jogos Favoritos</strong>
+                </td>
+            </tr>
+            <!-- Tabela - linha cabeçalho -->
+            <tr id="cabecalho">
+                <td align="center"><strong>Nome do Jogo</strong></td>
+                <td align="center"><strong>Ano Lançamento</strong></td>
+                <td align="center"><strong>Plataforma</strong></td>
+                <td align="center"><strong>Desenvolvedora / Publisher</strong></td>
+                <td align="center"><strong>Avaliação Pessoal</strong></td>
+            </tr>
+            <!-- Tabela - linha Mario -->
+            <tr id="mario">
+                <td align="left" style="padding-left: 5px">Super Mario World</td>
+                <td align="left" style="padding-left: 5px">1990</td>
+                <td align="left" style="padding-left: 5px">Super Nintendo</td>
+                <td align="left" style="padding-left: 5px">Nintendo</td>
+                <td align="left" style="padding-left: 5px">9.8</td>
+            </tr>
+            <!-- Tabela - linha TopGear -->
+            <tr id="topGear">
+                <td align="left" style="padding-left: 5px">Top Gear</td>
+                <td align="left" style="padding-left: 5px">1992</td>
+                <td align="left" style="padding-left: 5px">Super Nintendo</td>
+                <td align="left" style="padding-left: 5px">Gremlin Graphics / Kemco</td>
+                <td align="left" style="padding-left: 5px">9.2</td>
+            </tr>
+            <!-- Tabela - linha Rock 'N' Roll Racing -->
+            <tr id="rockErollRacing">
+                <td align="left" style="padding-left: 5px">Rock 'n' Roll Racing</td>
+                <td align="left" style="padding-left: 5px">1993</td>
+                <td align="left" style="padding-left: 5px">Super Nintendo</td>
+                <td align="left" style="padding-left: 5px">Blizzard / Interplay</td>
+                <td align="left" style="padding-left: 5px">9.0</td>
+            </tr>
+            <!-- Tabela - linha Crash Bandicoot -->
+            <tr id="crashBandicoot">
+                <td align="left" style="padding-left: 5px">Crash Bandicoot</td>
+                <td align="left" style="padding-left: 5px">1990</td>
+                <td align="left" style="padding-left: 5px">Play Station One</td>
+                <td align="left" style="padding-left: 5px">Naughty Dog / Activision</td>
+                <td align="left" style="padding-left: 5px">9.8</td>
+            </tr>
+            <!-- Tabela - linha Mortal Kombat -->
+            <tr id="mortalKombat">
+                <td align="left" style="padding-left: 5px">Mortal Kombat Trilogy</td>
+                <td align="left" style="padding-left: 5px">1996</td>
+                <td align="left" style="padding-left: 5px">Play Station One</td>
+                <td align="left" style="padding-left: 5px">Midway Games</td>
+                <td align="left" style="padding-left: 5px">9.3</td>
+            </tr>
+            <!-- Tabela - linha Need For Speed Underground II -->
+            <tr id="nfs2">
+                <td align="left" style="padding-left: 5px">Need For Speed Underground II</td>
+                <td align="left" style="padding-left: 5px">2004</td>
+                <td align="left" style="padding-left: 5px">Play Station Two</td>
+                <td align="left" style="padding-left: 5px">EA Black Box / Electronic Arts</td>
+                <td align="left" style="padding-left: 5px">10</td>
+            </tr>
+            <!-- Tabela - linha Resident Evil 4 -->
+            <tr id="re4">
+                <td align="left" style="padding-left: 5px">Resident Evil 4</td>
+                <td align="left" style="padding-left: 5px">2005</td>
+                <td align="left" style="padding-left: 5px">Play Station Two</td>
+                <td align="left" style="padding-left: 5px">Capcom</td>
+                <td align="left" style="padding-left: 5px">10</td>
+            </tr>
 
-        <tr id="cabecalho" >
-            <td align="center"><strong>Nome do Jogo</strong></td>
-            <td align="center"><strong>Ano Lançamento</strong></td>
-            <td align="center"><strong>Plataforma</strong></td>
-            <td align="center"><strong>Desenvolvedora / Publisher</strong></td>
-            <td align="center"><strong>Avaliação Pessoal</strong></td>
-        </tr>
+        </table>
 
-        <tr id="mario">
-            <td align="left" style="padding-left: 5px">Super Mario World</td>
-            <td align="left" style="padding-left: 5px">1990</td>
-            <td align="left" style="padding-left: 5px">Super Nintendo</td>
-            <td align="left" style="padding-left: 5px">Nintendo</td>
-            <td align="left" style="padding-left: 5px">9.8</td>
-        </tr>
+        <br><br>
 
-        <tr id="topGear" >
-            <td align="left" style="padding-left: 5px">Top Gear</td>
-            <td align="left" style="padding-left: 5px">1992</td>
-            <td align="left" style="padding-left: 5px">Super Nintendo</td>
-            <td align="left" style="padding-left: 5px">Gremlin Graphics / Kemco</td>
-            <td align="left" style="padding-left: 5px">9.2</td>
-        </tr>
-        <tr id="rockErollRacing" >
-            <td align="left" style="padding-left: 5px">Rock 'n' Roll Racing</td>
-            <td align="left" style="padding-left: 5px">1993</td>
-            <td align="left" style="padding-left: 5px">Super Nintendo</td>
-            <td align="left" style="padding-left: 5px">Blizzard / Interplay</td>
-            <td align="left" style="padding-left: 5px">9.0</td>
-        </tr>
+        <!-- Lista ordenadas e não ordenadas sobre curiosidades dos jogos citados -->
+        <h2>Algumas curiosidades sobre os jogos</h2>
 
-        <tr id="crashBandicoot" >
-            <td align="left" style="padding-left: 5px">Crash Bandicoot</td>
-            <td align="left" style="padding-left: 5px">1990</td>
-            <td align="left" style="padding-left: 5px">Play Station One</td>
-            <td align="left" style="padding-left: 5px">Naughty Dog / Activision</td>
-            <td align="left" style="padding-left: 5px">9.8</td>
-        </tr>
-        <tr id="mortalKombat" >
-            <td align="left" style="padding-left: 5px">Mortal Kombat Trilogy</td>
-            <td align="left" style="padding-left: 5px">1996</td>
-            <td align="left" style="padding-left: 5px">Play Station One</td>
-            <td align="left" style="padding-left: 5px">Midway Games</td>
-            <td align="left" style="padding-left: 5px">9.3</td>
-        </tr>
+        <ul>   
+            <!-- Lista - Super Mario World -->
+            <li style="font-weight: bold; font-size: 16px;">Super Mario World</li>
+            <ol>
+                <li>
+                    <!-- Lista - Mario - Curiosidade 1-->
+                    <u>Braços do Yoshi sempre laranja:</u> independentemente da cor do Yoshi que Mario monta, seus
+                    braços
+                    aparecem sempre em laranja no SNES. Só na versão Game Boy Advance é que cada Yoshi tem braços
+                    combinando
+                    com sua cor.
+                    <br>Font:<a href="https://www.imdb.com/title/tt0221606/trivia/?utm_source=chatgpt.com"
+                        target="_blank">IMB</a>
+                </li>
+                <li>
+                    <!-- Lista - Mario - Curiosidade 2-->
+                    <u>Introdução do Spin Jump:</u> foi em Super Mario World que a mecânica de “spin jump” (pulo
+                    giratório)
+                    estreou na série, abrindo caminho para manobras acrobáticas nas fases seguintes.
+                    <br>Font: <a href="https://www.imdb.com/title/tt0221606/trivia/?utm_source=chatgpt.com"
+                        target="_blank">IMB</a>
+                </li>
+                <li>
+                    <!-- Lista - Mario - Curiosidade 3-->
+                    <u>Conceito antigo de Mario montando dinossauro:</u> a ideia de um dinossauro como montaria já
+                    existia
+                    desde Super Mario Bros., mas só se tornou viável tecnicamente em Super Mario World, dando origem ao
+                    icônico Yoshi.
+                    <br>Font: <a href="https://www.vgfacts.com/game/supermarioworld/?utm_source=chatgpt.com"
+                        target="_blank">VGFacts</a>
+                </li>
+            </ol>
+            <!-- Lista - Top Gear -->
+            <li>Top Gear</li>
+            <ol>
+                <li>
+                    <!-- Lista - Top Gear - Curiosidade 1 -->
+                    <u>Top Racer no Japão:</u> no país de origem, o jogo foi lançado como Top Racer em 27 de março de
+                    1992;
+                    já na América do Norte estreou em 16 de abril de 1992, sob o título Top Gear.
+                    <br>Font: <a href="https://en.wikipedia.org/wiki/Top_Gear_%28video_game%29?utm_source=chatgpt.com"
+                        target="_blank">Wikipédia</a>
+                </li>
+                <li>
+                    <!-- Lista - Top Gear - Curiosidade 2 -->
+                    <u>Trilha sonora baseada em Lotus:</u> todas as músicas de Top Gear são remixes de faixas da série
+                    Lotus
+                    para Amiga, compostas por Barry Leitch. O tema de abertura, por exemplo, vem do final de Lotus Turbo
+                    Challenge 2.
+                    <br>Font: <a href="https://en.wikipedia.org/wiki/Top_Gear_%28video_game%29?utm_source=chatgpt.com"
+                        target="_blank">Wikipédia</a>
+                </li>
+                <li>
+                    <!-- Lista - Top Gear - Curiosidade 3 -->
+                    <u>Poucas mas duradouras faixas:</u> embora o cartucho contenha apenas sete músicas (incluindo um
+                    jingle), cada uma delas é bastante extensa, o que ajudava a amenizar a repetição durante as
+                    corridas.
+                    <br>Font: <a
+                        href="https://www.vgmpf.com/Wiki/index.php?title=Top_Gear_%28SNES%29&utm_source=chatgpt.com"
+                        target="_blank">VGMPF</a>
+                </li>
+            </ol>
+            <!-- Lista - Rock 'N' Roll Racing -->
+            <li>Rock 'n' Roll Racing</li>
+            <ol>
+                <li>
+                    <!-- Lista - Rock 'N' Roll Racing - Curiosidade 1 -->
+                    <u>Referência musical no nome:</u> o antagonista Jake Badlands homenageia o guitarrista Jake E. Lee,
+                    conhecido pelo trabalho na banda Badlands e com Ozzy Osbourne.
+                    <br>Font: <a href="https://www.imdb.com/title/tt1336607/trivia/?utm_source=chatgpt.com"
+                        target="_blank">IMB</a>
+                </li>
+                <li>
+                    <!-- Lista - Rock 'N' Roll Racing - Curiosidade 2 -->
+                    <u>Clássicos do rock nas pistas:</u> o jogo traz temas licenciados de Steppenwolf (“Born to Be
+                    Wild”) e
+                    Deep Purple (“Highway Star”), algo raro em títulos de SNES na época.
+                    <br>Font: <a
+                        href="https://tvtropes.org/pmwiki/pmwiki.php/Trivia/RockNRollRacing?utm_source=chatgpt.com"
+                        target="_blank">TV Tropes</a>
+                </li>
+            </ol>
+            <!-- Lista - Crash Bandicoot -->
+            <li>Crash Bandicoot</li>
+            <ol>
+                <li>
+                    <!-- Lista - Crash Bandicoot - Curiosidade 1 -->
+                    <u>Primeiro nome: Willie/Willy the Wombat:</u> no início do desenvolvimento (1994), o personagem se
+                    chamava “<s>Willy the Wombat</s>” antes de ganhar o apelido “Crash” pelo hábito de detonar caixas.
+                    <br>Font: <a
+                        href="https://en.wikipedia.org/wiki/Crash_Bandicoot_%28character%29?utm_source=chatgpt.com"
+                        target="_blank">Wikpédia</a>
+                </li>
+                <li>
+                    <!-- Lista - Crash Bandicoot - Curiosidade 2 -->
+                    <u>Tawna removida por marketing:</u> a heroína original <s>Tawna</s> foi retirada de sucessores após
+                    críticas
+                    internas à sua aparência e reapareceu apenas em versões posteriores e remakes.
+                    <br>Font: <a href="https://www.imdb.com/title/tt0295914/trivia/?utm_source=chatgpt.com"
+                        target="_blank">IMB</a>
+                </li>
+                <li>
+                    <!-- Lista - Crash Bandicoot - Curiosidade 3 -->
+                    <u>Redesign para o público japonês:</u> para melhorar as vendas no Japão, Naughty Dog aumentou os
+                    olhos
+                    de Crash e suavizou seu visual, recomendação feita por Shuhei Yoshida, ganhando ainda um pequeno
+                    “passinho” de dança em anúncios locais.
+                    <br>Font: <a
+                        href="https://as.com/meristation/noticias/el-problema-de-crash-bandicoot-en-japon-que-naughty-dog-tuvo-que-corregir-hacedlo-mas-majo-n/?utm_source=chatgpt.com"
+                        target="_blank">Diario AS</a>
+                </li>
+            </ol>
+            <!-- Lista - Top Gear - Curiosidade 1 -->
+            <li>Mortal Kombat Trilogy</li>
+            <ol>
+                <li>
+                    <!-- Lista - Mortal Kombat Trilogy - Curiosidade 1 -->
+                    <u>Sprites exclusivos de Johnny Cage:</u> Cage foi o único personagem a ter todos os sprites
+                    recriados do zero, consequência da demissão de seu dublador original.
+                    <br>Font: <a href="https://www.imdb.com/title/tt0203704/trivia/?utm_source=chatgpt.com"
+                        target="_blank">IMB</a>
+                </li>
+                <li>
+                    <!-- Lista - Mortal Kombat Trilogy - Curiosidade 2 -->
+                    <u>Tremor quase entrou no jogo:</u> o ninja Tremor chegou a ser planejado como personagem jogável,
+                    mas acabou sendo substituído por Rain na versão final.
+                    <br>Font: <a href="https://www.vgfacts.com/game/mortalkombattrilogy/?utm_source=chatgpt.com"
+                        target="_blank">VGFacts</a>
+                </li>
+                <li>
+                    <!-- Lista - Mortal Kombat Trilogy - Curiosidade 3 -->
+                    <u>Chefões desbloqueáveis no PS1:</u> a versão PlayStation permitia controlar os principais chefões
+                    da série—Goro, Kintaro, Motaro e Shao Kahn—além dos lutadores regulares.
+                    <br>Font: <a
+                        href="https://www.mobygames.com/game/2036/mortal-kombat-trilogy/trivia/?utm_source=chatgpt.com"
+                        target="_blank">MobyGames</a>
+                </li>
+            </ol>
+            <!-- Lista - Need For Speed Underground II -->
+            <li>Need For Speed Underground II</li>
+            <ol>
+                <li>
+                    <!-- Lista - Need For Speed Underground II - Curiosidade 1 -->
+                    <u>Três categorias de body kits:</u> há conjuntos distintos de kits de carro - para modelos que
+                    retornaram do primeiro jogo, para novidades e para alguns exclusivos desta edição.
+                    <br>Font: <a href="https://www.imdb.com/title/tt0420798/trivia/?utm_source=chatgpt.com"
+                        target="_blank">IMB</a>
+                </li>
+                <li>
+                    <!-- Lista - Need For Speed Underground II - Curiosidade 2 -->
+                    <u>Honda S2000 “oculto” nos arquivos:</u> nos arquivos do jogo existe a pasta do S2000, mas faltam
+                    sprites e dados; por isso não aparece em corridas.
+                    <br>Font: <a
+                        href="https://gamefaqs.gamespot.com/pc/920469-need-for-speed-underground-2/trivia?utm_source=chatgpt.com"
+                        target="_blank">GameFAQs</a>
+                </li>
+                <li>
+                    <!-- Lista - Need For Speed Underground II - Curiosidade 3 -->
+                    <u>Carro de Rachel quase um RX-8:</u> originalmente o veículo de Rachel seria um Mazda RX-8,
+                    conforme
+                    mostrado em cenas de corte que acabaram alteradas antes do lançamento.
+                    <br>Font: <a
+                        href="https://tvtropes.org/pmwiki/pmwiki.php/Trivia/NeedForSpeedUnderground?utm_source=chatgpt.com"
+                        target="_blank">TV Tropes</a>
+                </li>
+            </ol>
+            <!-- Lista - Resident Evil 4 -->
+            <li>Resident Evil 4</li>
+            <ol>
+                <li>
+                    <!-- Lista - Resident Evil 4 - Curiosidade 1 -->
+                    <u>Uso de Pesetas em 2004:</u> apesar de se passar em 2004, na Espanha (país que já utilizava Euro
+                    desde
+                    2002) o jogo mantém a moeda Peseta para ambientação.
+                    <br>Font: <a href="https://www.imdb.com/title/tt0397042/trivia/?utm_source=chatgpt.com"
+                        target="_blank">IMB</a>
+                </li>
+                <li>
+                    <!-- Lista - Resident Evil 4 - Curiosidade 2 -->
+                    <u>Modos extras no RS2 e ports:</u> concluir a campanha principal desbloqueava “Assignment Ada” e
+                    “The
+                    Mercenaries”; “Separate Ways” chegou na edição de PS2, reforçando a longevidade do título.
+                    <br>Font: <a href="https://www.imdb.com/title/tt21047286/trivia/?utm_source=chatgpt.com"
+                        target="_blank">IMB</a>
+                </li>
+                <li>
+                    <!-- Lista - Resident Evil 4 - Curiosidade 3 -->
+                    <u>Pioneiro da câmera por cima do ombro:</u> a perspectiva sobre o ombro de Leon estabeleceu o
+                    padrão
+                    para futuros jogos de tiro, influenciando franquias como Gears of War e Dead Space.
+                    <br>Font: <a
+                        href="https://www.theguardian.com/games/2025/jan/10/resident-evil-4-at-20-the-horror-game-that-revitalised-a-genre?utm_source=chatgpt.com"
+                        target="_blank">The Guardian</a>
+                </li>
+            </ol>
 
-        <tr id="nfs2" >
-            <td align="left" style="padding-left: 5px">Need For Speed Underground II</td>
-            <td align="left" style="padding-left: 5px">2004</td>
-            <td align="left" style="padding-left: 5px">Play Station Two</td>
-            <td align="left" style="padding-left: 5px">EA Black Box / Electronic Arts</td>
-            <td align="left" style="padding-left: 5px">10</td>
-        </tr>
+        </ul>
+    </main>
 
-        <tr id="re4" >
-            <td align="left" style="padding-left: 5px">Resident Evil 4</td>
-            <td align="left" style="padding-left: 5px">2005</td>
-            <td align="left" style="padding-left: 5px">Play Station Two</td>
-            <td align="left" style="padding-left: 5px">Capcom</td>
-            <td align="left" style="padding-left: 5px">10</td>
-        </tr>
+    <!-- Rodapé do Site -->
+    <footer>
+        <div class="footer-container">
+            <!-- Sobre o Site -->
+            <div class="footer-section">
+                <h3>Sobre o Site</h3>
+                <p>Este site foi criado para compartilhar minha paixão por jogos clássicos de Super Nintendo e PlayStation que marcaram gerações de jogadores.</p>
+                <p>Todos os conteúdos e opiniões são de caráter pessoal baseados nas minhas experiências com esses consoles.</p>
+            </div>
+            
+            <!-- Navegar entre outras páginas -->
+            <div class="footer-section">
+                <h3>Navegação Rápida</h3>
+                <ul class="footer-links">
+                    <li><a href="/pages/index.html">Página Inicial</a></li>
+                    <li><a href="/pages/tabelaResumo.html">Tabela de Informações</a></li>
+                    <li><a href="/pages/playstation.html">PlayStation</a></li>
+                    <li><a href="/pages/supernintendo.html">Super Nintendo</a></li>
+                    <li><a href="/pages/formulario.html">Formulário de Contato</a></li>
+                </ul>
+            </div>
+            
+            <!-- Contatos e Redes Sociais -->
+            <div class="footer-section">
+                <h3>Conecte-se Comigo</h3>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/jones-rodriguesg/" target="_blank" class="social-icon" title="LinkedIn">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/linkedin.svg" alt="LinkedIn">
+                        <span>LinkedIn</span>
+                    </a>
+                    
+                    <a href="https://github.com/pgjon" target="_blank" class="social-icon" title="GitHub">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/github.svg" alt="GitHub">
+                        <span>GitHub</span>
+                    </a>
+                    
+                    <a href="https://www.instagram.com/jones_rodriguesg/?hl=pt-br" target="_blank" class="social-icon" title="Instagram">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/instagram.svg" alt="Instagram">
+                        <span>Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
         
-    </table>
-
-    <br><br>
-
-    <h2>Algumas curiosidades sobre os jogos</h2>
-
-    <ul>
-        <li style="font-weight: bold; font-size: 16px;">Super Mario World</li>
-        <ol>
-            <li>
-                <u>Braços do Yoshi sempre laranja:</u> independentemente da cor do Yoshi que Mario monta, seus braços aparecem sempre em laranja no SNES. Só na versão Game Boy Advance é que cada Yoshi tem braços combinando com sua cor.
-                <br>Font:<a href="https://www.imdb.com/title/tt0221606/trivia/?utm_source=chatgpt.com" target="_blank">IMB</a></li>
-            <li>
-                <u>Introdução do Spin Jump:</u> foi em Super Mario World que a mecânica de “spin jump” (pulo giratório) estreou na série, abrindo caminho para manobras acrobáticas nas fases seguintes.
-                <br>Font: <a href="https://www.imdb.com/title/tt0221606/trivia/?utm_source=chatgpt.com" target="_blank">IMB</a></li>
-            <li>
-                <u>Conceito antigo de Mario montando dinossauro:</u> a ideia de um dinossauro como montaria já existia desde Super Mario Bros., mas só se tornou viável tecnicamente em Super Mario World, dando origem ao icônico Yoshi.
-                <br>Font: <a href="https://www.vgfacts.com/game/supermarioworld/?utm_source=chatgpt.com" target="_blank">VGFacts</a></li>
-        </ol>
-
-        <li>Top Gear</li>
-        <ol>
-            <li>
-                <u>Top Racer no Japão:</u> no país de origem, o jogo foi lançado como Top Racer em 27 de março de 1992; já na América do Norte estreou em 16 de abril de 1992, sob o título Top Gear.
-                <br>Font: <a href="https://en.wikipedia.org/wiki/Top_Gear_%28video_game%29?utm_source=chatgpt.com" target="_blank">Wikipédia</a>
-            </li>
-            <li>
-                <u>Trilha sonora baseada em Lotus:</u> todas as músicas de Top Gear são remixes de faixas da série Lotus para Amiga, compostas por Barry Leitch. O tema de abertura, por exemplo, vem do final de Lotus Turbo Challenge 2.
-                <br>Font: <a href="https://en.wikipedia.org/wiki/Top_Gear_%28video_game%29?utm_source=chatgpt.com" target="_blank">Wikipédia</a>
-            </li>
-            <li>
-                <u>Poucas mas duradouras faixas:</u> embora o cartucho contenha apenas sete músicas (incluindo um jingle), cada uma delas é bastante extensa, o que ajudava a amenizar a repetição durante as corridas.
-                <br>Font: <a href="https://www.vgmpf.com/Wiki/index.php?title=Top_Gear_%28SNES%29&utm_source=chatgpt.com" target="_blank">VGMPF</a>
-            </li>
-        </ol>
-
-        <li>Rock 'n' Roll Racing</li>
-        <ol>
-            <li>
-                <u>Referência musical no nome:</u> o antagonista Jake Badlands homenageia o guitarrista Jake E. Lee, conhecido pelo trabalho na banda Badlands e com Ozzy Osbourne.
-                <br>Font: <a href="https://www.imdb.com/title/tt1336607/trivia/?utm_source=chatgpt.com" target="_blank">IMB</a>
-            </li>
-            <li>
-                <u>Clássicos do rock nas pistas:</u> o jogo traz temas licenciados de Steppenwolf (“Born to Be Wild”) e Deep Purple (“Highway Star”), algo raro em títulos de SNES na época.
-                <br>Font: <a href="https://tvtropes.org/pmwiki/pmwiki.php/Trivia/RockNRollRacing?utm_source=chatgpt.com" target="_blank">TV Tropes</a>
-            </li>
-        </ol>
-
-        <li>Crash Bandicoot</li>
-        <ol>
-            <li>
-                <u>Primeiro nome: Willie/Willy the Wombat:</u> no início do desenvolvimento (1994), o personagem se chamava “Willy the Wombat” antes de ganhar o apelido “Crash” pelo hábito de detonar caixas.
-                <br>Font: <a href="https://en.wikipedia.org/wiki/Crash_Bandicoot_%28character%29?utm_source=chatgpt.com" target="_blank">Wikpédia</a>
-            </li>
-            <li>
-                <u>Tawna removida por marketing:</u> a heroína original Tawna foi retirada de sucessores após críticas internas à sua aparência e reapareceu apenas em versões posteriores e remakes.
-                <br>Font: <a href="https://www.imdb.com/title/tt0295914/trivia/?utm_source=chatgpt.com" target="_blank">IMB</a>
-            </li>
-            <li>
-                <u>Redesign para o público japonês:</u> para melhorar as vendas no Japão, Naughty Dog aumentou os olhos de Crash e suavizou seu visual, recomendação feita por Shuhei Yoshida, ganhando ainda um pequeno “passinho” de dança em anúncios locais.
-                <br>Font: <a href="https://as.com/meristation/noticias/el-problema-de-crash-bandicoot-en-japon-que-naughty-dog-tuvo-que-corregir-hacedlo-mas-majo-n/?utm_source=chatgpt.com" target="_blank">Diario AS</a>
-            </li>
-        </ol>
-
-        <li>Mortal Kombat Trilogy</li>
-        <ol>
-            <li>
-                <u>Sprites exclusivos de Johnny Cage:</u> Cage foi o único personagem a ter todos os sprites recriados do zero, consequência da demissão de seu dublador original.
-                <br>Font: <a href="https://www.imdb.com/title/tt0203704/trivia/?utm_source=chatgpt.com" target="_blank">IMB</a>
-            </li>
-            <li>
-                <u>Tremor quase entrou no jogo:</u> o ninja Tremor chegou a ser planejado como personagem jogável, mas acabou sendo substituído por Rain na versão final.
-                <br>Font: <a href="https://www.vgfacts.com/game/mortalkombattrilogy/?utm_source=chatgpt.com" target="_blank">VGFacts</a>
-            </li>
-            <li>
-                <u>Chefões desbloqueáveis no PS1:</u> a versão PlayStation permitia controlar os principais chefões da série—Goro, Kintaro, Motaro e Shao Kahn—além dos lutadores regulares.
-                <br>Font: <a href="https://www.mobygames.com/game/2036/mortal-kombat-trilogy/trivia/?utm_source=chatgpt.com" target="_blank">MobyGames</a>
-            </li>
-        </ol>
-
-        <li>Need For Speed Underground II</li>
-        <ol>
-            <li>
-                <u>Três categorias de body kits:</u> há conjuntos distintos de kits de carro: para modelos que retornaram do primeiro jogo, para novidades e para alguns exclusivos desta edição.
-                <br>Font: <a href="https://www.imdb.com/title/tt0420798/trivia/?utm_source=chatgpt.com" target="_blank">IMB</a>
-            </li>
-            <li>
-                <u>Honda S2000 “oculto” nos arquivos:</u> nos arquivos do jogo existe a pasta do S2000, mas faltam sprites e dados; por isso não aparece em corridas.
-                <br>Font: <a href="https://gamefaqs.gamespot.com/pc/920469-need-for-speed-underground-2/trivia?utm_source=chatgpt.com" target="_blank">GameFAQs</a>
-            </li>
-            <li>
-                <u>Carro de Rachel quase um RX-8:</u> originalmente o veículo de Rachel seria um Mazda RX-8, conforme mostrado em cenas de corte que acabaram alteradas antes do lançamento.
-                <br>Font: <a href="https://tvtropes.org/pmwiki/pmwiki.php/Trivia/NeedForSpeedUnderground?utm_source=chatgpt.com" target="_blank">TV Tropes</a>
-            </li>
-        </ol>
-
-        <li>Resident Evil 4</li>
-        <ol>
-            <li>
-                <u>Uso de Pesetas em 2004:</u> apesar de se passar em 2004, na Espanha (país que já utilizava Euro desde 2002) o jogo mantém a moeda Peseta para ambientação.
-                <br>Font: <a href="https://www.imdb.com/title/tt0397042/trivia/?utm_source=chatgpt.com" target="_blank">IMB</a>
-            </li>
-            <li>
-                <u>Modos extras no RS2 e ports:</u> concluir a campanha principal desbloqueava “Assignment Ada” e “The Mercenaries”; “Separate Ways” chegou na edição de PS2, reforçando a longevidade do título.
-                <br>Font: <a href="https://www.imdb.com/title/tt21047286/trivia/?utm_source=chatgpt.com" target="_blank">IMB</a>
-            </li>
-            <li>
-                <u>Pioneiro da câmera por cima do ombro:</u> a perspectiva sobre o ombro de Leon estabeleceu o padrão para futuros jogos de tiro, influenciando franquias como Gears of War e Dead Space.
-                <br>Font: <a href="https://www.theguardian.com/games/2025/jan/10/resident-evil-4-at-20-the-horror-game-that-revitalised-a-genre?utm_source=chatgpt.com" target="_blank">The Guardian</a>
-            </li>
-        </ol>
-
-    </ul>
+        <!-- Direitos Reservados -->
+        <div class="copyright">
+            <p>&copy; 2025 Site de Jogos Clássicos - Desenvolvido por Jones Rodrigues. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
+
 </html>
