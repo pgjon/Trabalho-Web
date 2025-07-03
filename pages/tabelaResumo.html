@@ -3,26 +3,33 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Página com resumo de informações sobre jogos favoritos.">
     <meta name="author" content="Jones">
+    <meta name="description" content="Página com resumo de informações sobre jogos favoritos.">
     <meta name="keywords" content="Jogos, favoritos, consoles, PlayStation, Need for Speed Underground 2, Crash Bandicoot,
         Mortal Kombat Trilogy, Resident Evil 4">
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resumo Informações</title>
     <link rel="stylesheet" href="../styles/style.css">
+    <script src="../scripts/script.js"></script>
 </head>
 
 <body>
     <!-- Menu de navegação superior -->
     <header>
-        <h1>Resumo de Informações</h1>
+        <h1>esumo de Informações</h1>
+    
         <nav>
-            <a href="../pages/index.html">Início</a>
-            <a href="../pages/tabelaResumo.html">Tabela de Informações</a>
-            <a href="../pages/playstation.html">PlayStation</a>
-            <a href="../pages/supernintendo.html">Supernintendo</a>
-            <a href="../pages/formulario.html">Entre em contato</a>
+            <div class="nav-content">
+                <div class="nav-links">
+                    <a href="../pages/index.html">Início</a>
+                    <a href="../pages/tabelaResumo.html" class="active">Tabela de Informações</a>
+                    <a href="../pages/playstation.html">PlayStation</a>
+                    <a href="../pages/supernintendo.html">Supernintendo</a>
+                    <a href="../pages/formulario.html">Entre em contato</a>
+                </div>
+                <img src="../img/logo/controle.v-4.jpg" alt="Logo" class="logo">
+            </div>
         </nav>
     </header>
 
@@ -348,6 +355,10 @@
                         <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/instagram.svg" alt="Instagram">
                         <span>Instagram</span>
                     </a>
+                </div>
+                <div class="email-telefone">
+                    <a href="mailto:jones-rodrigues@exemplo.com" class="footer-email">jones-rodrigues@exemplo.com</a>
+                    <p>Telefone: (99) 9 9999-9999</p>
                 </div>
             </div>
         </div>

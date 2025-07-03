@@ -3,27 +3,33 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Jones">
     <meta name="description"
         content="Formulário para coletar opiniões e informações de contato dos visitantes do site.">
-    <meta name="author" content="Jones">
     <meta name="keywords" content="formulário, opinião, contato, PlayStation, Super Nintendo">
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário - PlayStation e Super Nintendo</title>
-    <link rel="stylesheet" href="../styles/form.css">
     <link rel="stylesheet" href="../styles/style.css">
+    <script src="../scripts/script.js"></script>
 </head>
 
 <body>
     <!-- Menu de Navegação do Site -->
     <header>
         <h1>Formulário de Contato</h1>
+    
         <nav>
-            <a href="../pages/index.html">Início</a>
-            <a href="../pages/tabelaResumo.html">Tabela de Informações</a>
-            <a href="../pages/playstation.html">PlayStation</a>
-            <a href="../pages/supernintendo.html">Supernintendo</a>
-            <a href="../pages/formulario.html">Entre em contato</a>
+            <div class="nav-content">
+                <div class="nav-links">
+                    <a href="../pages/index.html">Início</a>
+                    <a href="../pages/tabelaResumo.html">Tabela de Informações</a>
+                    <a href="../pages/playstation.html">PlayStation</a>
+                    <a href="../pages/supernintendo.html">Supernintendo</a>
+                    <a href="../pages/formulario.html" class="active">Entre em contato</a>
+                </div>
+                <img src="../img/logo/controle.v-4.jpg" alt="Logo" class="logo">
+            </div>
         </nav>
     </header>
     <!-- Conteúdo principal do formulário -->
@@ -130,6 +136,10 @@
                         <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/instagram.svg" alt="Instagram">
                         <span>Instagram</span>
                     </a>
+                </div>
+                <div class="email-telefone centralizar-footer">
+                    <a href="mailto:jones-rodrigues@exemplo.com" class="footer-email">jones-rodrigues@exemplo.com</a>
+                    <p>Telefone: (99) 9 9999-9999</p>
                 </div>
             </div>
         </div>

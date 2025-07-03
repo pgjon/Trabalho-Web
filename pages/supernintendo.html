@@ -3,24 +3,31 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Jogos favoritos do Super Nintendo">
     <meta name="author" content="Jones">
+    <meta name="description" content="Jogos favoritos do Super Nintendo">
     <meta name="keywords" content="Jogos, favoritos, Super Nintendo, Mario, Top Gear, Rock n Roll Racing">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Super Nintendo</title>
     <link rel="stylesheet" href="../styles/style.css">
+    <script src="../scripts/script.js"></script>
 </head>
 
 <body>
     <!-- Menu de navegação superior -->
     <header>
         <h1>Super Nintendo</h1>
+    
         <nav>
-            <a href="../pages/index.html">Início</a>
-            <a href="../pages/tabelaResumo.html">Tabela de Informações</a>
-            <a href="../pages/playstation.html">PlayStation</a>
-            <a href="../pages/supernintendo.html">Supernintendo</a>
-            <a href="../pages/formulario.html">Entre em contato</a>
+            <div class="nav-content">
+                <div class="nav-links">
+                    <a href="../pages/index.html">Início</a>
+                    <a href="../pages/tabelaResumo.html">Tabela de Informações</a>
+                    <a href="../pages/playstation.html">PlayStation</a>
+                    <a href="../pages/supernintendo.html" class="active">Supernintendo</a>
+                    <a href="../pages/formulario.html">Entre em contato</a>
+                </div>
+                <img src="../img/logo/controle.v-4.jpg" alt="Logo" class="logo">
+            </div>
         </nav>
     </header>
 
@@ -40,11 +47,12 @@
             cascas de Koopa Troopas.</p>
 
         <h3>Relembre algumas imagens do jogo</h3>
-        <img src="../img/Supernintendo/mario/1.jpg" title="Uma fase incial"
-            alt="Uma das primeiras fases do Jogo Super Mario World" width="480">
-
-        <img src="../img/Supernintendo/mario/2.bmp" title="Tela inicial do jogo"
-            alt="Tela inicial do jogo Super Mario World" width="480"><br>
+        <div class="galeria">
+            <img src="../img/Supernintendo/mario/1.jpg" title="Mario e Yoshi"
+                alt="Mario e Yoshi no jogo Super Mario World" width="480">
+            <img src="../img/Supernintendo/mario/2.bmp" title="Mario e Luigi"
+                alt="Mario e Luigi no jogo Super Mario World" width="480">
+        </div>
 
         <h3>Confira uma Gameplay de um YouTuber famoso brasileiro.</h3>
         <iframe width="426" height="240"
@@ -66,11 +74,12 @@
             do SNES. A trilha sonora foi feita em uma semana, sendo boa parte derivada da série Lotus Challenge.</p>
 
         <h3>Relembre algumas imagens do jogo</h3>
-        <img src="../img/Supernintendo/top gear/1.jpg" title="Corrida na neve"
-            alt="Imagem de uma das corridas de neve do jogo Top Gear 2" width="480">
-
-        <img src="../img/Supernintendo/top gear/2.webp" title="Corrida a noite" alt="Corrida a noite no jogo Top Gear 2"
-            width="480"><br>
+        <div class="galeria">
+            <img src="../img/Supernintendo/top gear/1.jpg" title="Corrida no deserto"
+                alt="Imagem de uma das corridas no deserto do jogo Top Gear 2" width="480">
+            <img src="../img/Supernintendo/top gear/2.webp" title="Corrida na cidade"
+                alt="Imagem de uma das corridas na cidade do jogo Top Gear 2" width="480">
+        </div>
 
         <h3>Confira como era a jogabilidade do jogo abaixo.</h3>
         <iframe width="426" height="240" src="https://www.youtube.com/embed/aHatg2MXAKE"
@@ -94,11 +103,12 @@
             em 2003.</p>
 
         <h3>Relembre algumas imagens do jogo</h3>
-        <img src="../img/Supernintendo/rock n roll racing/1.png" title="Tela inicial"
-            alt="Imagem da tela incial do jogo Rock & Roll Racing" width="480">
-
-        <img src="../img/Supernintendo/rock n roll racing/2.webp" title="Gameplay do jogo"
-            alt="Imagem de gameplay do jogo Rock & Roll Racing" width="480"><br>
+        <div class="galeria">
+            <img src="../img/Supernintendo/rock n roll racing/1.png" title="Corrida no jogo"
+                alt="Imagem de uma das corridas do jogo Rock & Roll Racing" width="480">
+            <img src="../img/Supernintendo/rock n roll racing/2.webp" title="Tela de seleção de carros"
+                alt="Imagem da tela de seleção de carros do jogo Rock & Roll Racing" width="480">
+        </div>
 
         <h3>Confira como era a jogabilidade do jogo abaixo.</h3>
         <iframe width="426" height="240" src="https://www.youtube.com/embed/auoTvdvN9uk"
@@ -147,6 +157,10 @@
                         <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/instagram.svg" alt="Instagram">
                         <span>Instagram</span>
                     </a>
+                </div>
+                <div class="email-telefone">
+                    <a href="mailto:jones-rodrigues@exemplo.com" class="footer-email">jones-rodrigues@exemplo.com</a>
+                    <p>Telefone: (99) 9 9999-9999</p>
                 </div>
             </div>
         </div>
