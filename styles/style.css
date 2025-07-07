@@ -100,7 +100,7 @@ a:hover::after {
     transform: scaleX(1);
 }
 
-.active {
+.active, ul li a.active {
     color: #2980b9;
     font-weight: bold;
 }
@@ -165,7 +165,7 @@ tr:hover {
 }
 
 /* Formulários */
-.form-container {
+.form-container, .calculator {
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
@@ -218,7 +218,7 @@ textarea {
     margin-bottom: 15px;
 }
 
-.form-container {
+.form-container, .calculator {
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
@@ -298,6 +298,36 @@ ul li, ol li {
         display: block;
         margin-bottom: 5px;
     }
+}
+
+/* Calculadora */
+.calculator .buttons button {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px 8px 5px 0;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.calculator .buttons button:hover {
+  background-color: #2980b9;
+}
+
+/* Remove as setas dos inputs type="number" no Chrome, Brave, Edge, Opera, Safari */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Remove as setas no Firefox */
+input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
 }
 
 /* Estilos específicos para o footer */

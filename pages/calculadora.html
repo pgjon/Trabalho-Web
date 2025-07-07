@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jones">
+    <meta name="description" content="Página para mostrar um protótipo de calculadora simples">
+    <meta name="keywords" content="Calculadora simples, protótipo, JavaScript, HTML, CSS, matemática, operações básicas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="../scripts/script.js"></script>
+</head>
+
+<body>
+    <!-- Menu de Navegação do Site -->
+    <header>
+        <h1>Calculadora</h1>
+    
+        <nav>
+            <div class="nav-content">
+                <div class="nav-links">
+                    <a href="../pages/index.html">Início</a>
+                    <a href="../pages/tabelaResumo.html">Tabela de Informações</a>
+                    <a href="../pages/playstation.html">PlayStation</a>
+                    <a href="../pages/supernintendo.html">Supernintendo</a>
+                    <a href="../pages/formulario.html">Entre em contato</a>
+                    <a href="../pages/calculadora.html" class="active">Calculadora</a>
+                </div>
+                <img src="../img/logo/controle.v-4.jpg" alt="Logo" class="logo">
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main>
+        <div class="calculator">
+            <h2>Calculadora Básica</h2>
+            
+            <form id="calc-form" autocomplete="off">
+                <div class="input-group">
+                    <label for="n1">Primeiro número</label>
+                    <input type="number" id="n1" class="input-field" required value="0" 
+                        onfocus="if(this.value=='0') this.value=''"
+                        onblur="if(this.value=='') this.value='0'">
+                </div>
+        
+                <div class="input-group">
+                    <label for="n2">Segundo número</label>
+                    <input type="number" id="n2" class="input-field" required value="0" 
+                        onfocus="if(this.value=='0') this.value=''"
+                        onblur="if(this.value=='') this.value='0'">
+                </div>
+
+                <div class="buttons">
+                    <button type="button" onclick="calcular('soma')">Somar</button>
+                    <button type="button" onclick="calcular('subtrair')">Subtrair</button>
+                    <button type="button" onclick="calcular('multiplicar')">Multiplicar</button>
+                    <button type="button" onclick="calcular('dividir')">Dividir</button></br>
+                    <button type="button" onclick="calcular('radical')">Radiciação</button>
+                    <button type="button" onclick="calcular('porcento')">Porcentagem</button>
+                    <button type="button" onclick="calcular('potencia')">Potenciação</button>
+                    <button type="button" onclick="calcular('fatorar')">Fatoração</button></br>
+                    <button type="button" onclick="limparValores('LimparValores')">Limpar Valores</button>
+                </div>
+
+                <div class="input-group">
+                    <label for="resultado">Resultado:</label>
+                    <input type="text" id="resultado" class="input-field" disabled value="0">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Rodapé do site -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section" style="margin: 0 auto; text-align: center;">
+                <!-- Contatos e Redes Sociais -->
+                <h3>Conecte-se Comigo</h3>
+                <div class="social-links" style="justify-content: center;">
+                    <a href="https://www.linkedin.com/in/jones-rodriguesg/" target="_blank" class="social-icon"
+                        title="LinkedIn">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/linkedin.svg" alt="LinkedIn">
+                        <span>LinkedIn</span>
+                    </a>
+
+                    <a href="https://github.com/pgjon" target="_blank" class="social-icon" title="GitHub">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/github.svg" alt="GitHub">
+                        <span>GitHub</span>
+                    </a>
+
+                    <a href="https://www.instagram.com/jones_rodriguesg/?hl=pt-br" target="_blank" class="social-icon"
+                        title="Instagram">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/instagram.svg" alt="Instagram">
+                        <span>Instagram</span>
+                    </a>
+                </div>
+                <div class="email-telefone centralizar-footer">
+                    <a href="mailto:jones-rodrigues@exemplo.com" class="footer-email">jones-rodrigues@exemplo.com</a>
+                    <p>Telefone: (99) 9 9999-9999</p>
+                </div>
+            </div>
+        </div>
+        <!-- Direitos Reservados -->
+        <div class="copyright">
+            <p>&copy; 2025 Site de Jogos Clássicos - Desenvolvido por Jones Rodrigues. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
