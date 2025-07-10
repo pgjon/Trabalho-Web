@@ -36,11 +36,25 @@
 
     <!-- Conteúdo principal do site -->
     <main>
-        <h3>Esta página contém um resumo das informações relevantes.</h3>
+        <h2>Esta página contém um resumo das informações relevantes.</h2>
+
+        <h3>Ranking dos Jogos Favoritos</h3>
+        <div id="ordenacao-lista">
+            <button id="btn-crescente" onclick="ordenarLista('asc')">Ordem Crescente</button>
+            <button id="btn-decrescente" onclick="ordenarLista('desc')">Ordem Decrescente</button>
+            <ol id="lista-jogos">
+                <li>Super Mario World</li>
+                <li>Top Gear</li>
+                <li>Rock 'n' Roll Racing</li>
+                <li>Crash Bandicoot</li>
+                <li>Resident Evil 4</li>
+            </ol>
+        </div>
 
         <!-- Tabela Resumo do Site -->
-        <table title="Informações" border="1" width="80%" cellpadding="1" cellspacing="1">
-            <tr>
+        <table id="tabela-jogos" title="Informações" border="1" width="80%" cellpadding="1" cellspacing="1">
+            <!-- Tabela - linha destaque -->
+            <tr class="destaque-tabela">
                 <td colspan="5" style="font-size: 18px;">
                     <strong>Lista de Jogos Favoritos</strong>
                 </td>
@@ -80,7 +94,7 @@
             <!-- Tabela - linha Crash Bandicoot -->
             <tr id="crashBandicoot">
                 <td align="left" style="padding-left: 5px">Crash Bandicoot</td>
-                <td align="left" style="padding-left: 5px">1990</td>
+                <td align="left" style="padding-left: 5px">1996</td>
                 <td align="left" style="padding-left: 5px">Play Station One</td>
                 <td align="left" style="padding-left: 5px">Naughty Dog / Activision</td>
                 <td align="left" style="padding-left: 5px">9.8</td>
@@ -102,16 +116,16 @@
                 <td align="left" style="padding-left: 5px">10</td>
             </tr>
             <!-- Tabela - linha Resident Evil 4 -->
-            <tr id="re4">
+            <tr id="re4" class="destaque-tabela">
                 <td align="left" style="padding-left: 5px">Resident Evil 4</td>
                 <td align="left" style="padding-left: 5px">2005</td>
                 <td align="left" style="padding-left: 5px">Play Station Two</td>
                 <td align="left" style="padding-left: 5px">Capcom</td>
                 <td align="left" style="padding-left: 5px">10</td>
             </tr>
-
         </table>
-
+        <!-- botão para trocar cor da tabela -->
+        <button id="btn-trocar-cor">Trocar cor da tabela</button>
         <br><br>
 
         <!-- Lista ordenadas e não ordenadas sobre curiosidades dos jogos citados -->

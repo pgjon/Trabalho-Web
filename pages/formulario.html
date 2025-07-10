@@ -11,17 +11,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário - PlayStation e Super Nintendo</title>
     <link rel="stylesheet" href="../styles/style.css">
-    <script src="../scripts/script.js" defer></script>
+    <script src="../scripts/script.js" defer></script> <!-- Importa o JS de validação -->
 </head>
 
 <body>
-    <!-- Menu de Navegação do Site -->
+    <!-- Cabeçalho e navegação do site -->
     <header>
         <h1>Formulário de Contato</h1>
-    
         <nav>
             <div class="nav-content">
                 <div class="nav-links">
+                    <!-- Links de navegação -->
                     <a href="../pages/index.html">Início</a>
                     <a href="../pages/tabelaResumo.html">Tabela de Informações</a>
                     <a href="../pages/playstation.html">PlayStation</a>
@@ -29,17 +29,18 @@
                     <a href="../pages/formulario.html" class="active">Entre em contato</a>
                     <a href="../pages/calculadora.html">Calculadora</a>
                 </div>
+                <!-- Logo do site -->
                 <img src="../img/logo/controle.v-4.jpg" alt="Logo" class="logo">
             </div>
         </nav>
     </header>
+
     <!-- Conteúdo principal do formulário -->
     <main>
         <div class="form-container">
-            <!--Início do formulário-->
-            <form action="dados.php">
-
-                <!-- Seleção do tipo radio para saber o gosto sobre o site -->
+            <!-- Início do formulário -->
+            <form action="dados.php" onsubmit="return validarFormulario()"> <!-- Essa linha garante que o formulário só será enviado para dados.php se a validação feita pela função validarFormulario() for aprovada. -->
+                <!-- Bloco de avaliação do site com radio buttons -->
                 <fieldset>
                     <legend>
                         <h3>O que você achou do site??</h3>
@@ -50,7 +51,8 @@
                     <input type="radio" name="option"> Poderia Melhorar
                     <input type="radio" name="option"> Não Gostei
                 </fieldset>
-                <!-- Seleção única para saber qual melhor seção junto a uma caixa de texto caso não tenha a opção -->
+
+                <!-- Seleção da página favorita -->
                 <h3>Qual página você mais gostou?</h3>
                 <select name="secao">
                     <option value="todoSite" selected>Todo o Site</option>
@@ -62,50 +64,47 @@
                     <option value="calculadora">Página de Calculadora</option>
                 </select>
 
-                <!-- Caixa de texto para comentário / sugestões -->
+                <!-- Caixa de texto para comentários/sugestões -->
                 <h3>Digite seus comentários no campo abaixo:</h3>
-                <textarea name="comentarios" id="comentarios" rows="5" cols="50" required
+                <textarea name="comentarios" id="comentarios" rows="5" cols="50"
                     placeholder="Escreva seus comentários aqui..."></textarea>
 
-                <!-- Inputs para nome, email e fone -->
+                <!-- Bloco de contato do usuário -->
                 <h3 class="centered">Diga-nos como entrar em contato com você:</h3>
-
                 <div class="contato">
+                    <!-- Campo Nome -->
                     <div class="input-group">
                         <label for="nome">Nome:</label>
                         <input type="text" id="nome" name="nome" placeholder="Nome" class="input-field">
                     </div>
-
+                    <!-- Campo Sobrenome -->
                     <div class="input-group">
                         <label for="sobrenome">Sobrenome:</label>
                         <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome" class="input-field">
                     </div>
-
+                    <!-- Campo E-mail -->
                     <div class="input-group">
                         <label for="email">E-mail:</label>
-                        <input type="email" id="email" name="email" required
+                        <input type="email" id="email" name="email"
                             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="exemple@exemple.com"
                             class="input-field">
                     </div>
-
+                    <!-- Campo Telefone/Contato -->
                     <div class="input-group">
                         <label for="contato">Contato:</label>
                         <input type="tel" id="contato" name="contato" placeholder="(XX) XXXXX-XXXX" class="input-field">
                     </div>
-
-                    <!-- Checkbox para concordar com os termos -->
+                    <!-- Checkbox para aceitar os termos -->
                     <div class="checkbox-group">
                         <input type="checkbox" id="termos" name="termos">
                         <label for="termos">Li e concordo com os termos</label>
                     </div>
-
-                    <!-- Checkbox para receber novidades via email -->
+                    <!-- Checkbox para receber novidades -->
                     <div class="checkbox-group">
                         <input type="checkbox" id="novidades" name="novidades">
                         <label for="novidades">Quero receber as novidades do site por e-mail</label>
                     </div>
-
-                    <!-- Botões para enviar os dados ou resetar o preenchimento -->
+                    <!-- Botões de envio e limpeza do formulário -->
                     <div class="buttons">
                         <input type="submit" value="Enviar Dados">
                         <input type="reset" value="Limpar Formulário">
@@ -122,23 +121,25 @@
                 <!-- Contatos e Redes Sociais -->
                 <h3>Conecte-se Comigo</h3>
                 <div class="social-links" style="justify-content: center;">
+                    <!-- LinkedIn -->
                     <a href="https://www.linkedin.com/in/jones-rodriguesg/" target="_blank" class="social-icon"
                         title="LinkedIn">
                         <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/linkedin.svg" alt="LinkedIn">
                         <span>LinkedIn</span>
                     </a>
-
+                    <!-- GitHub -->
                     <a href="https://github.com/pgjon" target="_blank" class="social-icon" title="GitHub">
                         <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/github.svg" alt="GitHub">
                         <span>GitHub</span>
                     </a>
-
+                    <!-- Instagram -->
                     <a href="https://www.instagram.com/jones_rodriguesg/?hl=pt-br" target="_blank" class="social-icon"
                         title="Instagram">
                         <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/instagram.svg" alt="Instagram">
                         <span>Instagram</span>
                     </a>
                 </div>
+                <!-- E-mail e telefone -->
                 <div class="email-telefone centralizar-footer">
                     <a href="mailto:jones-rodrigues@exemplo.com" class="footer-email">jones-rodrigues@exemplo.com</a>
                     <p>Telefone: (99) 9 9999-9999</p>
@@ -149,7 +150,3 @@
         <div class="copyright">
             <p>&copy; 2025 Site de Jogos Clássicos - Desenvolvido por Jones Rodrigues. Todos os direitos reservados.</p>
         </div>
-    </footer>
-</body>
-
-</html>
