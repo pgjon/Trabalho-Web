@@ -22,17 +22,34 @@ nav {
 }
 /* Links do menu */
 nav a {
+    display: inline-block; /* Exibição em bloco para os links */
+    width: auto;
     color: white; /* Cor do texto */
     text-decoration: none; /* Remove sublinhado */
-    padding: 8px 15px; /* Espaçamento interno dos links */
+    padding: 8px 0; /* Espaçamento interno dos links */
     margin-right: 10px; /* Margem à direita dos links */
     border-radius: 3px; /* Bordas arredondadas dos links */
     transition: background-color 0.3s; /* Transição suave para a cor de fundo */
-    display: inline-block; /* Exibição em bloco para os links */
 }
 /* Remove o sublinhado dos links */
 nav a:hover {
     background-color: #34495e; /* Cor de fundo ao passar o mouse */
+}
+
+/* Efeito de sublinhado animado */
+nav a::after {
+    content: ''; /* Cria um pseudo-elemento para o sublinhado */
+    position: absolute; /* Posição absoluta para o sublinhado */
+    left: 0;
+    bottom: -2px; /* Posição abaixo do link */
+    left: 0;
+    right: 0;
+    width: 100%; /* Largura total do link */
+    height: 2px;
+    transform: scaleX(0); /* Inicia invisível */
+    transform-origin: left; /* Origem da transformação */
+    transition: transform 0.3s ease-in-out; /* Transição suave */
+    background: #3498db;
 }
 /* Layout flexível para navegação */
 .nav {
@@ -49,6 +66,7 @@ nav a:hover {
 .nav-links {
     display: flex;
     gap: 15px; /* Espaçamento entre os links */
+    margin-left: 25px;
 }
 /* Logo */
 .logo {
@@ -56,6 +74,7 @@ nav a:hover {
     min-width: 35px;
     height: auto; /* Altura automática para manter a proporção */
     margin-bottom: 0px; /* Remove margem inferior */
+    margin-right: 25px;
 }
 
 /* Cabeçalhos */
@@ -86,27 +105,20 @@ a {
     text-decoration: none; /* Remove sublinhado padrão */
     transition: color 0.3s; /* Transição suave para a cor */
 }
-/* Efeito de sublinhado animado */
-a::after {
-    content: ''; /* Cria um pseudo-elemento para o sublinhado */
-    position: absolute; /* Posição absoluta para o sublinhado */
-    left: 0;
-    bottom: -2px; /* Posição abaixo do link */
-    width: 100%; /* Largura total do link */
-    height: 2px;
-    transform: scaleX(0); /* Inicia invisível */
-    transform-origin: left; /* Origem da transformação */
-    transition: transform 0.3s ease-in-out; /* Transição suave */
-    background: #3498db;
-}
 /* Efeito de hover para o sublinhado */
 a:hover::after {
     transform: scaleX(1); /* Expande o sublinhado ao passar o mouse */
 }
-
+/* Efeito ativo para o sublinhado */
 .active, ul li a.active {
-    color: #2980b9;
+    color: #ffffff;
     font-weight: bold;
+    background-color: #34495e; /* Cor de fundo para o link ativo */
+}
+
+/* Efeito ativo para o sublinhado */
+nav a.active::after {
+    transform: scaleX(1); /* Mantem a linha ativa */
 }
 
 /* Imagens */
@@ -506,9 +518,9 @@ footer {
         flex-direction: column;
     }
     
-    .social-links {
-        justify-content: center;
-        width: 100%;
+    .nav-links {
+        flex-direction: column; 
+        align-items: flex-start; /* Alinha os links à esquerda */
     }
 
     iframe {
@@ -522,7 +534,8 @@ footer {
     }
     
     nav a {
-        display: block;
+        display: inline-block;
+        width: auto;
         margin-bottom: 5px;
     }
 
@@ -574,3 +587,5 @@ footer {
     border-radius: 5px;
     padding: 10px 20px;
 }
+
+
